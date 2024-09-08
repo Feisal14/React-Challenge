@@ -2,11 +2,12 @@ import {Image} from 'react-native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import React from 'react';
-import Home from '../Screens/Home';
+import Home from '../Screens/home/Home';
 import OrderScreen from '../Screens/tabs/OrderScreen';
 import WishListScreen from '../Screens/tabs/WishListScreen';
 import ProfileScreen from '../Screens/tabs/ProfileScreen';
 import images from '../../assets/images/icons';
+import Details from '../Screens/home/Details';
 
 const Stack = createNativeStackNavigator();
 const tab = createBottomTabNavigator();
@@ -18,6 +19,7 @@ const MyStack = () => {
         component={TabNavigator}
         options={{headerShown: false}}
       />
+      <Stack.Screen name="Details" component={Details} />
     </Stack.Navigator>
   );
 };
