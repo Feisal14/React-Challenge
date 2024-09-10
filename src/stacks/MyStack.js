@@ -19,7 +19,10 @@ const MyStack = () => {
         component={TabNavigator}
         options={{headerShown: false}}
       />
-      <Stack.Screen name="Details" component={Details} />
+      <Stack.Screen
+        name="Details"
+        component={Details}
+      />
     </Stack.Navigator>
   );
 };
@@ -31,6 +34,7 @@ const TabNavigator = () => {
         name="Home"
         component={Home}
         options={{
+          headerShown: false,
           title: 'Home',
           tabBarIcon: ({focused}) => (
             <Image source={images.home} style={{height: 30, width: 30}} />

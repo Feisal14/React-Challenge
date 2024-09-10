@@ -23,7 +23,7 @@ const Home = ({navigation}) => {
         <Text style={styles.placeLocation}>{item.location_en}</Text>
         <View style={styles.placeRating}>
           <Text style={styles.placeRatingText}>{item.rating}</Text>
-          <Text style={styles.placeRatingIcon}>★</Text>
+          <Text style={styles.placeRatingIcon}>⭐</Text>
         </View>
       </View>
     </TouchableOpacity>

@@ -49,7 +49,6 @@ export const styles = StyleSheet.create({
   detailsContainer: {
     paddingHorizontal: 20,
     paddingVertical: 15,
-    backgroundColor: 'white',
     borderTopLeftRadius: 20,
     borderTopRightRadius: 20,
   },
